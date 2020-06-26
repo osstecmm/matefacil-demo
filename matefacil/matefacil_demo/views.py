@@ -32,7 +32,7 @@ def resJav(request):
     a1 = m1.replace("'", "")
     a2 = m2.replace("'", "")
     msj = f'{a1}{a2}\n'.encode('utf-8')
-    p = subprocess.Popen([f'java matefacil_demo/Programs/HelloWorld {a1} {a2}'], stdout=subprocess.PIPE, shell = True)
+    p = subprocess.Popen([f'java -cp matefacil_demo/Programs HelloWorld {a1} {a2}'], stdout=subprocess.PIPE, shell = True)
     s = p.communicate(msj)[0].decode('utf-8')
     return HttpResponse(s)
 
