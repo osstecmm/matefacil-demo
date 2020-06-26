@@ -25,7 +25,7 @@ SECRET_KEY = 'm7ug1#ik05r03r%*mt6vc5^ullso(lfpj0a2emth82&*27(qka'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_app',
+    'matefacil_demo',
 ]
 
 MIDDLEWARE = [
