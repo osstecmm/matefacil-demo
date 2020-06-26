@@ -7,30 +7,31 @@
 </head>
 <body>
     <h1>MateFacil Demo</h1>
-    <h2>Purpose: Show Python Subprocesses in action</h2>
-    <h3>SubProcess simple</h3>
-    <a type="submit" href="/resSimp">Simple</a>
+    <h2>Purpose: Show Python Subprocesses in action through Django app</h2>
     
-    <h3>SubProcess simple with C++</h3>
+    <h3>Test Case #1: execute the command 'cat' and show the output</h3>
+    <a type="submit" href="/resSimp">Click Me!</a>
+    
+    <h3>Test Case #2: Hello World from C</h3>
+    <form action="/resC/" method="GET">
+        <input type="submit" value="Accept" />
+    </form>
+
+    <h3>Test Case #3: Hello World from C++</h3>
     <a type="submit" href="/resSimpCpp">Simple Cpp</a>
     
-    <h3>SubProcess with text for C++</h3>
+    <h3>Test Case #4: Input through C++</h3>
     <form action="/resCpp/" method="GET">
-        <H5>Use the String</H5>
+        <H5>Add some text:</H5>
         Text: <input type="text" name="cppRes"/>
         <input type="submit" value="Accept" />
     </form>
     
-    <h3>SubProcess with text for Java</h3>
+    <h3>Test Case #5: Input through Java</h3>
     <form action="/resJav/" method="GET">
-        <h5>Use the Numbers</h5>
+        <h5>Add numbers:</h5>
         Num 1: <input type="text" name="javaRes1"/>
         Num 2: <input type="text" name="javaRes2"/>
-        <input type="submit" value="Accept" />
-    </form>
-    
-    <h3>SubProcess with text for C</h3>
-    <form action="/resC/" method="GET">
         <input type="submit" value="Accept" />
     </form>
 </form>
