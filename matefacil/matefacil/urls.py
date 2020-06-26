@@ -18,8 +18,9 @@ from django.urls import path
 from matefacil_demo import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', views.funcionStart),
     path('index/', views.funcionStart),
+    path('admin/', admin.site.urls),
     path('resSimp/', views.resSimp),
     path('resSimpCpp/', views.resSimpCpp),
     path('resCpp/', views.resCpp),

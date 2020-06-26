@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'djangoSubp.urls'
+ROOT_URLCONF = 'matefacil.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'djangoSubp.wsgi.application'
+WSGI_APPLICATION = 'matefacil.wsgi.application'
 
 
 # Database
