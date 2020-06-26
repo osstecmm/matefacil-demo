@@ -19,7 +19,7 @@ def resSimpCpp(request):
     return HttpResponse(m)
 
 def resCpp(request):
-    p = subprocess.Popen(["./matefacil_demo/Programs/out2"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, shell = True)
+    p = subprocess.Popen(["./matefacil_demo/Programs/hello_input"], stdout=subprocess.PIPE, stdin=subprocess.PIPE, shell = True)
     m = "%r" %request.GET["cppRes"]
     a = m.replace("'", "")
     p.stdin.write(f'{a}\n'.encode('utf-8'))
